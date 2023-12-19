@@ -7,7 +7,15 @@ import {Component} from '@angular/core';
 })
 
 export class heroeComponent{ 
-    nombre: string = 'IronMAN'
+    nombre: string = 'Ironman'
     edad: number = 40;
+
+    get nombreMayus(){
+        return this.nombre.toUpperCase();
+    }
+
+    obtenerNombre(): string{
+        return `${this.nombre} - ${this.edad}`;
+    }
     
 }
