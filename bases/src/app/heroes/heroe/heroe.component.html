@@ -1,19 +1,21 @@
 <h1>Trabajando con el componente Heroes</h1>
 
+<h1>{{ nombre }}</h1>
 
-<h1>{{nombre}}</h1>
+<p>Nombre:</p>
+<p>{{ nombre }}</p>
 
-<dl>
-        <td>Nombre:</td>
-        <dd>{{nombre}}</dd>
+<p>Edad:</p>
+<p>{{ edad }}</p>
 
-        <td>Edad:</td>
-        <dd>{{edad}}</dd>
+<p>Funcion:</p>
+<p>{{ obtenerNombre() }}</p>
 
-        <td>Funcion: </td>
-        <dd>{{obtenerNombre()}}</dd>
+<p>HeroeMayus:</p>
+<p>{{ nombreMayus }}</p>
 
-        <td>HeroeMayus: </td>
-        <dd>{{nombreMayus}}</dd>
-</dl>
+<button (click)="cambiarNombre()">Cambiar Héroe</button>
+
+<button (click)="cambiarEdad()">Cambiar Edad</button>
+
 <!--<app-heroe></app-heroe>-->
