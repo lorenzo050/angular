@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ContadorComponent } from './contador.component';
 import { heroeComponent } from './heroes/heroe/heroe.component';
+import { ListaComponent } from './heroes/lista/lista.component';
 //importar ngMoudule ya que el archivo app.modules.ts ya no existe en las nuevas versiones de angular
 import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ContadorComponent,heroeComponent],
+  imports: [CommonModule, RouterOutlet, ContadorComponent,heroeComponent,ListaComponent],
   templateUrl: './app.component.html',
  // templateUrl: './heroes/heroe/heroe.component.html',
   styleUrl: './app.component.scss'

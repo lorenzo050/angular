@@ -9,3 +9,6 @@ ng serve -o
 
 //importar ngMoudule ya que el archivo app.modules.ts ya no existe en las nuevas versiones de angular
 import { NgModule } from '@angular/core';
+
+####Generar componentes
+ng generate component ./heroes/lista
