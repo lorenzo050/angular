@@ -5,13 +5,17 @@ import { ContadorComponent } from './contador.component';
 import { heroeComponent } from './heroes/heroe/heroe.component';
 import { ListaComponent } from './heroes/lista/lista.component';
 import { ContadoresNuevoComponent } from './contadores-nuevo/contadores-nuevo.component';
+import { DbzModule } from './dbz/dbz.module';
+import { MainPageComponent } from './dbz/main-page/main-page.component';
 //importar ngMoudule ya que el archivo app.modules.ts ya no existe en las nuevas versiones de angular
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { PersonajesComponent } from './dbz/personajes/personajes.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ContadorComponent,heroeComponent,ListaComponent,ContadoresNuevoComponent],
+  imports: [CommonModule, RouterOutlet, ContadorComponent,heroeComponent,ListaComponent,ContadoresNuevoComponent,DbzModule,MainPageComponent,FormsModule,PersonajesComponent],
   templateUrl: './app.component.html',
  // templateUrl: './heroes/heroe/heroe.component.html',
   styleUrl: './app.component.scss'
